@@ -37,10 +37,10 @@ pdf:
 	-V fontsize=12pt \
 	-V papersize=a4paper \
 	-V documentclass:report \
-	-V lang:german \
+	-V lang:de-DE \
 	-V mainlang:german \
 	-N \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex
 
 tex:
 	pandoc "$(INPUTDIR)"/*.md \
@@ -50,11 +50,11 @@ tex:
 	-V fontsize=12pt \
 	-V papersize=a4paper \
 	-V documentclass:report \
-	-V lang:german \
+	-V lang:de-DE \
 	-V mainlang:german \
 	-N \
 	--csl="$(STYLEDIR)/ref_format.csl" \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex
 
 docx:
 	pandoc "$(INPUTDIR)"/*.md \

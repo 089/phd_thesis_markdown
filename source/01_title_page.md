@@ -14,7 +14,7 @@
 \newcommand{\aStudiengruppe}{IF7}
 \newcommand{\aSemester}{WS 17/2018}
 
-\newcommand{\aName}{\aVorname\space\aNachname}
+\newcommand{\aName}{\aVorname\space \aNachname}
 
 % Prüfer_in
 \newcommand{\pTitle}{Prof. Dr.}
@@ -59,7 +59,7 @@
 
         \normalsize
         Prüfer:\\
-        \pTitle\space\pVorname\space\pNachname,\space\pInstitution
+        \pTitle\space \pVorname\space \pNachname,\space \pInstitution
 
         \vspace{0.5cm}
 
@@ -68,7 +68,7 @@
 
         \normalsize
         Betreuer:\\
-        \bTitle\space\bVorname\space\bNachname,\space\bInstitution
+        \bTitle\space \bVorname\space \bNachname,\space \bInstitution
 
         % Abgabedatum
         \datum

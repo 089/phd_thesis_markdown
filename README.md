@@ -46,8 +46,8 @@ Es gibt ein paar kleine Probleme:
     - Git, für Versionskontrolle
 2. [Forke das Repository](https://github.com/089/phd_thesis_markdown) oder [das Original Repository](https://github.com/tompollard/phd_thesis_markdown/fork) on Github  
 3. Klone das Repository auf deinen PC (oder [downloade die ZIP-Datei](https://github.com/089/phd_thesis_markdown/archive/master.zip)).  
-4. Wechsel in das Verzeichnis mit der Makefile und führe in der Konsole "make pdf" (oder "make html") aus. Die erzeugte Datei findest du dann im Output-Ordner.
-**Im Falle eines Fehlers** (e.g. `make: *** [pdf] Error 43`) führe ggf. folgende Befehle aus:  
+4. Wechsel in das Verzeichnis mit der Makefile, lege den Ordner "output" an und führe in der Konsole "make pdf" (oder "make html") aus. Die erzeugte Datei findest du dann im Output-Ordner.
+**Im Falle eines Fehlers** (e.g. `make: *** [pdf] Error 43`) hilfen die Ausgaben in der Datei pandoc.log. Führe ggf. folgende Befehle aus:  
     ```
     sudo tlmgr install truncate
     sudo tlmgr install tocloft
