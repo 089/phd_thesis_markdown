@@ -1,4 +1,9 @@
-# Einleitung mit Zitat
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\doublespacing
+\setlength{\parindent}{0.5in}
+
+# Einleitung mit Zitat {#sec:intro}
 
 ## Hintergrund
 

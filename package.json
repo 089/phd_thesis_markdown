@@ -1,20 +1,18 @@
 {
   "name": "MarkdownThesis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "watch": "grunt watch",
-    "livereload": "grunt server -type html"
+    "livereload": "grunt server --type=html"
   },
   "dependencies": {
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "^1.6.1",
+    "grunt-cli": "^1.5.0",
+    "grunt-contrib-connect": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-make": "^1.0.0",
-    "grunt-notify": "^0.4.1",
+    "grunt-notify": "^0.4.5",
+    "grunt-open": "^0.2.4",
     "grunt-parallel": "^0.5.1"
-  },
-  "devDependencies": {
-    "grunt-express": "^1.4.1",
-    "grunt-open": "^0.2.3"
   }
 }

@@ -1,4 +1,4 @@
-# Untersuchung mit Tabelle
+# Untersuchung mit Tabelle {#sec:research-table}
 
 ## Einleitung
 
@@ -21,8 +21,9 @@ Kommentare können so hinzugefügt werden.
 -->
 
 ## Ergebnisse
+<!-- Table formatting works same as figure formatting -->
 
-Die Tabelle \ref{tabellenreferenz} zeigt uns wie man eine Tabelle hinzufügt. Integer tincidunt sed nisl eget pellentesque. Mauris eleifend, nisl non lobortis fringilla, sapien eros aliquet orci, vitae pretium massa neque eu turpis. Pellentesque tincidunt aliquet volutpat. Ut ornare dui id ex sodales laoreet.
+Die [Tabelle @tbl:random] zeigt uns wie man eine Tabelle hinzufügt. Integer tincidunt sed nisl eget pellentesque. Mauris eleifend, nisl non lobortis fringilla, sapien eros aliquet orci, vitae pretium massa neque eu turpis. Pellentesque tincidunt aliquet volutpat. Ut ornare dui id ex sodales laoreet.
 
 <!-- Erzwingt eine neue Seite -->
 
@@ -35,18 +36,17 @@ Zeile 1               0.1                     0.2
 
 Zeile 2               0.3                     0.3
 
-Zeile 3               0.4                     0.4      
+Zeile 3               0.4                     0.4
 
 Zeile 4               0.5                     0.6
 
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
-Table: Das ist die Tabellenbeschriftung. Suspendisse blandit dolor sed tellus venenatis, venenatis fringilla turpis pretium. \label{tabellenreferenz}
-
+: Das ist die Tabellenbeschriftung. []{#tbl:random short-caption="Table short caption"}
 
 ## Auseinandersetzung
 
-Das ist die Auseinandersetzung mit den Ergebnissen. Etiam sit amet mi eros. Donec vel nisi sed purus gravida fermentum at quis odio. Vestibulum quis nisl sit amet justo maximus molestie. Maecenas vitae arcu erat. Nulla facilisi. Nam pretium mauris eu enim porttitor, a mattis velit dictum. Nulla sit amet ligula non mauris volutpat fermentum quis vitae sapien.
+Das ist die Auseinandersetzung mit den Ergebnissen. As we saw in @tbl:random, many things are true, and other things are not. Etiam sit amet mi eros. Donec vel nisi sed purus gravida fermentum at quis odio. Vestibulum quis nisl sit amet justo maximus molestie. Maecenas vitae arcu erat. Nulla facilisi. Nam pretium mauris eu enim porttitor, a mattis velit dictum. Nulla sit amet ligula non mauris volutpat fermentum quis vitae sapien.
 
 ## Schlussfolgerung
 

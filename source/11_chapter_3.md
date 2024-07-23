@@ -1,4 +1,4 @@
-# Erste Untersuchung mit Code
+# Erste Untersuchung mit Code {#sec:research-code}
 
 ## Einleitung
 
@@ -8,7 +8,7 @@ Das ist die Einleitung. Nam mollis congue tortor, sit amet convallis tortor moll
 
 Suspendisse iaculis in lacus ut dignissim. Cras dignissim dictum eleifend. Suspendisse potenti. Suspendisse et nisi suscipit, vestibulum est at, maximus sapien. Sed ut diam tortor.
 
-### Unterabschnitt 1 mit Beispielcode
+### Unterabschnitt 1 mit Beispielcode {#sec:subsec-code}
 
 Das ist der erste Teil der Methodik. Cras porta dui a dolor tincidunt placerat. Cras scelerisque sem et malesuada vestibulum. Vivamus faucibus ligula ac sodales consectetur. Aliquam vel tristique nisl. Aliquam erat volutpat. Pellentesque iaculis enim sit amet posuere facilisis. Integer egestas quam sit amet nunc maximus, id bibendum ex blandit.
 
@@ -20,9 +20,13 @@ if mood == 'happy':
     print("I am a happy robot")
 ```
 
+: Code caption {#lst:code}
+
+You can then reference the code block like this (@lst:code).
+
 ### Unterabschnitt 2
 
-Das ist der zweite Teil der Methodik. Proin tincidunt odio non sem mollis tristique. Fusce pharetra accumsan volutpat. In nec mauris vel orci rutrum dapibus nec ac nibh. Praesent malesuada sagittis nulla, eget commodo mauris ultricies eget. Suspendisse iaculis finibus ligula.
+By running the code in @sec:subsec-code, we solved AI completely. Das ist der zweite Teil der Methodik. Proin tincidunt odio non sem mollis tristique. Fusce pharetra accumsan volutpat. In nec mauris vel orci rutrum dapibus nec ac nibh. Praesent malesuada sagittis nulla, eget commodo mauris ultricies eget. Suspendisse iaculis finibus ligula.
 
 <!--
 Kommentare können so hinzugefügt werden.

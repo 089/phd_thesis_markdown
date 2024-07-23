@@ -15,7 +15,8 @@ module.exports = function(grunt) {
         },
         watch: {
             options: {
-                interrupt: true
+                interrupt: true,
+                livereload: true,
             },
             scripts: {
                 files: ['source/*.md'],
@@ -30,19 +31,21 @@ module.exports = function(grunt) {
                 duration: 2 // the duration of notification in seconds, for `notify-send only
             }
         },
-        express: {
+        connect: {
             all: {
                 options: {
                     port: 9000,
                     hostname: "0.0.0.0",
-                    bases: ['output'], // the directory to serve
-                    livereload: true
+                    base: 'output', // the directory to serve
+                    livereload: {
+                        hostname: 'localhost',
+                    }
                 }
             }
         },
         open: {
             all: {
-                path: 'http://localhost:<%= express.all.options.port%>/thesis.html'
+                path: 'http://localhost:<%= connect.all.options.port%>/thesis.html'
             }
         }
     });
@@ -51,14 +54,14 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-make');
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-open');
-    grunt.loadNpmTasks('grunt-express');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     grunt.task.run('notify_hooks');
 
     grunt.registerTask('default', ['make:' + type]);
 
     grunt.registerTask('server', [
-        'express',
+        'connect',
         'open',
         'watch'
     ]);
